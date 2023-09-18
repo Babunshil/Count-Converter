@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import { logic } from "../logic";
-import { systemValue } from "../../logic";
+import { systemValue } from "../logic";
 import AnsTable from "./AnsTable";
 
 const Output = ({ number, system }) => {
 
   const [ansArray, setAnsArray] = useState([]);
-  console.log(systemValue());
 
 
   useEffect(() => {
