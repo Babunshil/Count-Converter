@@ -34,8 +34,8 @@ const Input = ({ onFormSubmit }) => {
             onChange={(e) => setSystem(e.target.value)}
           >
             <option value="">Select</option>
-            <option value="tex">Tex</option>
-            <option value="denier">Denier</option>
+            <option value="Tex">Tex</option>
+            <option value="Denier">Denier</option>
             <option value="Grist">Grist</option>
             <option value="English">English</option>
             <option value="Woollen">Woollen</option>
