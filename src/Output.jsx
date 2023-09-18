@@ -3,6 +3,7 @@ import { logic } from "../logic";
 import { systemValue } from "../logic";
 import AnsTable from "./AnsTable";
 
+
 const Output = ({ number, system }) => {
 
   const [ansArray, setAnsArray] = useState([]);
@@ -14,14 +15,12 @@ const Output = ({ number, system }) => {
   }, [system, number])
 
 
-
   return (
     <>
       <div className="output-container">
         <div className="output-number">
           <AnsTable ans={ansArray} systemValue={systemValue()} />
         </div>
-
       </div>
     </>
   )

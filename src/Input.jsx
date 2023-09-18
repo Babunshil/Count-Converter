@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 const Input = ({ onFormSubmit }) => {
 
-  const [number, setNumber] = useState('');
-  const [system, setSystem] = useState('');
+  const [number, setNumber] = useState();
+  const [system, setSystem] = useState('Select');
 
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
@@ -33,7 +33,7 @@ const Input = ({ onFormSubmit }) => {
             value={system}
             onChange={(e) => setSystem(e.target.value)}
           >
-            <option value="">Select</option>
+            <option value="Select">Select</option>
             <option value="Tex">Tex</option>
             <option value="Denier">Denier</option>
             <option value="Grist">Grist</option>

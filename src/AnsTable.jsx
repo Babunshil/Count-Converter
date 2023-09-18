@@ -3,6 +3,7 @@
 import React from "react";
 
 const AnsTable = ({ ans, systemValue }) => {
+
   return (
     <div className="ans-table">
       {ans?.map((val, i) => {
