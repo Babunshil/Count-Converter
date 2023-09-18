@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { logic } from "../../logic";
+import { logic } from "../logic";
 import { systemValue } from "../../logic";
 import AnsTable from "./AnsTable";
 
