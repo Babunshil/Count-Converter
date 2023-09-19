@@ -1,20 +1,33 @@
 
-
 import React from "react";
+import { motion } from 'framer-motion'
 
 const AnsTable = ({ ans, systemValue }) => {
 
   return (
-    <div className="ans-table">
+    <div className="ans-table"
+
+    >
       {ans?.map((val, i) => {
         return (
-          <div className="ans-row" key={i}>
-            <div className="system-label">{systemValue[i]}</div>
-            <div className="value">{val}</div>
-          </div>
+          <motion.div className="ans-row" key={i}
+            initial={{ x: '-100px' }}
+            whileInView={{ x: '0px' }}
+            transition={{ type: "spring", duration: '1' }}
+          >
+            <motion.div className="system-label"
+              initial={{ y: '100px' }}
+              whileInView={{ y: '0px' }}
+              transition={{ type: "spring", duration: '1.5' }} >{systemValue[i]}</motion.div>
+            <motion.div className="value"
+              initial={{ y: '100px' }}
+              whileInView={{ y: '0px' }}
+              transition={{ type: "spring", duration: '1.5' }}
+            >{val}</motion.div>
+          </motion.div>
         );
       })}
-    </div>
+    </div >
   );
 };
 

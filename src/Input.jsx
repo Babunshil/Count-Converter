@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from "framer-motion"
 
 const Input = ({ onFormSubmit }) => {
 
@@ -12,7 +13,11 @@ const Input = ({ onFormSubmit }) => {
 
   return (
     <>
-      <div>
+      <motion.div
+        initial={{ y: '-200px', opacity: "0" }}
+        whileInView={{ y: '0px', opacity: "1" }}
+        transition={{ type: "spring", delay: '1' }}
+      >
         <form onSubmit={handleSubmit}>
           {/* Input Field */}
           <input
@@ -49,7 +54,7 @@ const Input = ({ onFormSubmit }) => {
           {/* Button */}
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </motion.div>
     </>
   )
 }
