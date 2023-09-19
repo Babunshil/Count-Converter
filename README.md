@@ -1,6 +1,7 @@
 # Count Converter
 
-![Project Image](./screenshot.png)
+
+![Screenshot 2023-09-19 001027](https://github.com/Babunshil/Count-Converter/assets/106283743/d6627344-e7e9-4b8d-a38b-99d3bfc66568)
 
 > A simple Textile Count Converter built using Vite, React, and React-DOM.
 
@@ -38,13 +39,3 @@ Check out the live demo: [Textile Count Converter](https://count-converter.netli
 - [Netlify](https://www.netlify.com/): For hosting the project.
 
 ---
-
-## Installation
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Babunshil/Count-Converter.git
-   ```
