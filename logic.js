@@ -3,7 +3,7 @@ export function logic(system, number) {
 
   if (system === 'Select') {
     // return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    return [number, number, number, number, number, number, number, number, number, number]
+    return [number, number, number, number, number, number, number, number, number, number];
   }
 
   if (system === 'Tex') {
