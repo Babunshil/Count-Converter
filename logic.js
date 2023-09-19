@@ -1,11 +1,6 @@
 
 export function logic(system, number) {
 
-  if (system === 'Select') {
-    // return [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    return [number, number, number, number, number, number, number, number, number, number]
-  }
-
   if (system === 'Tex') {
     return [number, (number * 9.100).toFixed(3), (number * 0.028).toFixed(3), (number * 590).toFixed(3), (number * 1940).toFixed(3), (number * 1650).toFixed(3), (number * 886).toFixed(3), (number * 3100).toFixed(3), (number * 10).toFixed(3), (number * 1000).toFixed(3)];
   }
